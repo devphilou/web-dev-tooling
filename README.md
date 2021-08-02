@@ -8,6 +8,9 @@ Default tooling setup like formatters etc
         * Use [prettier config](https://github.com/devphilou/web-dev-tooling/blob/main/.prettierrc)
      * Integrate [Linter with Prettier](https://prettier.io/docs/en/integrating-with-linters.html)
      * Install [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+     * Install [Gitlens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+     * Install [IntelliJ Keybindings](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings)
+     * Install [Rainbow Brackets](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets)
 
 #### CLI
 2. Optional: install zsh `apt get install zsh`
