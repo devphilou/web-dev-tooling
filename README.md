@@ -32,3 +32,12 @@ Default tooling setup like formatters etc
 6. [Webpack](https://webpack.js.org/)
 7. [Parcel](https://parceljs.org/)
     * `npm install -g parcel-bundler`
+
+#### Other
+
+##### OS (Ubuntu)
+* Install wifi usb driver: https://github.com/aircrack-ng/rtl8812au
+   * `sudo apt update && sudo apt install build-essential git dkms`
+   * `git clone https://github.com/aircrack-ng/rtl8812au`
+   * `cd rtl8812au`
+   * `sudo make dkms_install`
