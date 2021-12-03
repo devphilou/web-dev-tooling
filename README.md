@@ -56,18 +56,18 @@ Default tooling setup like formatters etc
 #### Other
 
 ##### MacOS
-* Java
    * [Homebrew](https://brew.sh/index_de)
    * `brew install nvm` -> `nvm install --lts`
    * `brew install jenv`
       * `echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc`
       * `echo 'eval "$(jenv init -)"' >> ~/.zshrc`
-   * `brew install maven` (will also install current java)
-      * `jenv add /opt/homebrew/Cellar/openjdk/17.0.1_1/libexec/openjdk.jdk/Contents/Home`
-   * Install [SDKMan](https://sdkman.io/install)
-   * `sdk list java` -> install e.g. JAVA 8 with `sdk install java 8.0.312-zulu`
-      * `jenv add ~/.sdkman/candidates/java/current/zulu-8.jdk/Contents/Home`
-   * `jenv versions` -> `jenv global 1.8`
+   * Java
+      * `brew install maven` (will also install current java)
+         * `jenv add /opt/homebrew/Cellar/openjdk/17.0.1_1/libexec/openjdk.jdk/Contents/Home`
+      * Install [SDKMan](https://sdkman.io/install)
+      * `sdk list java` -> install e.g. JAVA 8 with `sdk install java 8.0.312-zulu`
+         * `jenv add ~/.sdkman/candidates/java/current/zulu-8.jdk/Contents/Home`
+      * `jenv versions` -> `jenv global 1.8`
 
 ##### OS (Ubuntu)
 * Install wifi usb driver: https://github.com/aircrack-ng/rtl8812au
