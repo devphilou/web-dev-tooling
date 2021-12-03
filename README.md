@@ -53,9 +53,9 @@ Default tooling setup like formatters etc
 7. [Parcel](https://parceljs.org/)
     * `npm install -g parcel-bundler`
 
-#### Other
+## Other
 
-##### MacOS
+#### MacOS
    * [Homebrew](https://brew.sh/index_de)
    * `brew install nvm` -> `nvm install --lts`
    * `brew install jenv`
@@ -70,7 +70,7 @@ Default tooling setup like formatters etc
       * `jenv versions` -> `jenv global 1.8`
       * `sdk install gradle`
 
-##### OS (Ubuntu)
+#### OS (Ubuntu)
 * Install wifi usb driver: https://github.com/aircrack-ng/rtl8812au
    * `sudo apt update && sudo apt install build-essential git dkms`
    * `git clone https://github.com/aircrack-ng/rtl8812au`
