@@ -1,4 +1,4 @@
-# web-dev-tooling
+# (web) dev-tooling
 Default tooling setup like formatters etc
 
 #### Editor
@@ -68,6 +68,7 @@ Default tooling setup like formatters etc
       * `sdk list java` -> install e.g. JAVA 8 with `sdk install java 8.0.312-zulu`
          * `jenv add ~/.sdkman/candidates/java/current/zulu-8.jdk/Contents/Home`
       * `jenv versions` -> `jenv global 1.8`
+      * `sdk install gradle`
 
 ##### OS (Ubuntu)
 * Install wifi usb driver: https://github.com/aircrack-ng/rtl8812au
