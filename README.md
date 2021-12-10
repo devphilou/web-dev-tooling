@@ -38,11 +38,12 @@ Default tooling setup like formatters etc
 4. Edit `vim .zshrc`
     * `ZSH_THEME=crcandy`
     * `alias gst="git status"`
-    * `alias go="git checkout"`
+    * `alias gco="git checkout"`
     * `alias got="git checkout --track"`
     * `alias gis="git stash"`
     * `alias gsp="git stash pop"`
     * `alias gsl="git stash list"`
+    * `alias gpu="git push --set-upstream origin $(git branch --show-current)"`
 
 #### Node
 5. Install [Node Version Manager](https://github.com/nvm-sh/nvm)
