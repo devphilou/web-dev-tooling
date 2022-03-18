@@ -44,6 +44,12 @@ Default tooling setup like formatters etc
     * `alias gsp="git stash pop"`
     * `alias gsl="git stash list"`
     * `alias gpu="git push --set-upstream origin $(git branch --show-current)"`
+5. Optional for MacOS: [fig](https://fig.io/)
+    * Edit .zshrc/.bashrc
+      ```
+      # Fig post block. Keep at the bottom of this file.
+      eval "$(fig init zsh post)"
+      ```
 
 #### Node
 5. Install [Node Version Manager](https://github.com/nvm-sh/nvm)
