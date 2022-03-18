@@ -52,12 +52,38 @@ Default tooling setup like formatters etc
       ```
 
 #### Node
-5. Install [Node Version Manager](https://github.com/nvm-sh/nvm)
+6. Install [Node Version Manager](https://github.com/nvm-sh/nvm)
+    * with brew: `brew install nvm`
     * `nvm install --lts`
+    * adjust .zshrc
+      ```
+      # Execute `nvm use` automatically when .nvmrc is present
+      # place this after nvm initialization!
+      autoload -U add-zsh-hook
+      load-nvmrc() {
+         local node_version="$(nvm version)"
+         local nvmrc_path="$(nvm_find_nvmrc)"
+
+         if [ -n "$nvmrc_path" ]; then
+            local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+            if [ "$nvmrc_node_version" = "N/A" ]; then
+               nvm install
+            elif [ "$nvmrc_node_version" != "$node_version" ]; then
+               nvm use
+            fi
+         elif [ "$node_version" != "$(nvm version default)" ]; then
+            echo "Reverting to nvm default version"
+            nvm use default
+         fi
+      }
+      add-zsh-hook chpwd load-nvmrc
+      load-nvmrc
+      ```
 
 #### Bundler
-6. [Webpack](https://webpack.js.org/)
-7. [Parcel](https://parceljs.org/)
+7. [Webpack](https://webpack.js.org/)
+8. [Parcel](https://parceljs.org/)
     * `npm install -g parcel-bundler`
 
 ## Other
